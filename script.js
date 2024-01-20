@@ -1,20 +1,18 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
 
+// hamburguesa
+const nav = document.querySelector("#nav")
+const abrir = document.querySelector("#abrir")
+const cerrar = document.querySelector("#cerrar")
 
+abrir.addEventListener("click", () => {
+  nav.classList.add("visible")
+})
 
-// selector
-let menu = document.querySelector('.hamburger');
-
-// method
-function toggleMenu (event) {
-  menu.classList.toggle('is-active');
-  document.querySelector( ".menuppal" ).classList.toggle("is_active");
-  event.preventDefault();
-}
-
-// event
-menu.addEventListener('click', toggleMenu, false);
+cerrar.addEventListener("click", () => {
+  nav.classList.remove("visible")
+})
 
 
 /* array de objetos */

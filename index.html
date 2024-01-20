@@ -16,45 +16,38 @@
 
 <body>
 
-  <header class="header">
-    <nav class="navbar">
+  <header>
 
+    <!-- TABLET Y MOVIL -->
       <div class="menu__responsive">
-        <div class="menu__responsive__left">
         <!-- HAMBURGUESA -->
-        <div class="respmenu">
-          <input type="checkbox"> <!-- INPUT  DEL BOTON -->
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list fas fa-bars" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="fa-times bi bi-check" viewBox="0 0 16 16">
-            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-          </svg>
-         <nav>  <!-- BARRA DE ENLACES DEL MENU -->
-           <ul>
-             <li><a href="#">Item 1</a></li>
-             <li><a href="#">Item 2</a></li>
-             <li><a href="#">Item 3</a></li>
-             <li><a href="#">Item 4</a></li>
-             <li><a href="#">Item 5</a></li>
-           </ul>
-         </nav>
-        </div>
-        <!-- BUSCAR -->
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" /></svg>
-        </div>
-        </div>
+        <button id="abrir" class="abrir-menu"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg></button>
+        <nav id="nav" class="hamburguer__nav">
+          <button id="cerrar" class="cerrar-menu"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/></svg></button>
+          <ul class="hamburguer__nav--list">
+            <li class="nav--list-li"><a href="./index.html">INICIO</a></li>
+            <li class="nav--list-li"><a href="./views/catalogo.html">CATÁLOGO</a></li>
+            <li class="nav--list-li"><a href="./views/contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+
         <!-- LOGOTIPO -->
-        <div>
-          <a href="./index.html"><img class="menu__responsive--logo" src="./img/AF black.png" alt="Aldo Ferretti"></a>
+        <div class="menu__responsive--logo">
+          <a href="./index.html"><img src="./img/AF black.png" alt="Aldo Ferretti"></a>
         </div>
+      
         <!-- CESTA -->
-        <a class="navbar--a" href="" aria-label="Mi cesta"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" /></svg></a>
+        <div class="menu__responsive--cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" /></svg>
+        </div>
+      </div>
 
-    </div>
 
 
+
+      
+    <!-- DESKTOP -->
+    <nav class="navbar">
       <div class="navbar__left">
         <a class="navbar--a" href="./views/catalogo.html">CATÁLOGO</a>
         <a class="navbar--a" href="./views/contacto.html">CONTACTO</a>
@@ -76,8 +69,6 @@
         <a class="navbar--a" href="">INICIAR SESIÓN</a>
         <a class="navbar--a" href="" aria-label="Mi cesta"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" /></svg></a>
       </div>
-
-
     </nav>
 
 
@@ -93,7 +84,7 @@
 
     <!-- BANNER -->
     <section class="banner">
-      <img class="banner__img" src="./img/Banner AF Home.webp" alt="">
+      <!-- <img class="banner__img" src="./img/AF leather.webp" alt=""> -->
 
       <!-- <video class="banner__video" width="100%" height="845px" autoplay muted loop>
         <source src="./img/video1.mp4" type="video/mp4">
@@ -229,7 +220,7 @@
     <section class="newsletter">
       <h2>Únete a nosotros</h2>
       <p>Suscríbete a nuestro boletín y sé el primero en enterarte de las novedades de Aldo Ferretti.</p>
-      <div class="custom-select">
+      <div class="newsletter__div">
         <input class="newsletter__input" type="email" name="" id="" placeholder="Introduce tu email">
         <button class="newsletter__button">SUSCRÍBETE</button>
       </div>
@@ -242,6 +233,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__box">
+
         <div class="footer__div">
           <h4>ALDO FERRETTI</h4>
           <p>Sobre nosotros</p>
@@ -249,6 +241,7 @@
           <p>¿Cómo saber la talla correcta?</p>
           <p>Condiciones de compra</p>
         </div>
+
         <div class="footer__div">
           <h4>CORPORATIVO</h4>
           <p>Envíos y devoluciones</p>
@@ -256,14 +249,17 @@
           <p>Política de privacidad</p>
           <p>Política de cookies</p>
         </div>
+
         <div class="footer__div">
           <h4>CONTACTO</h4>
           <p>Llámanos: (+34) 954 564 292</p>
           <p>Whatsapp: (+34) 638 726 246</p>
           <p>Horario (GMT+2): L-V de 09:00 - 14:00 / 15:00 - 18:00</p>
-          <a href="mailto:info@aldoferretti.com">Contacta con nosotros</a>
+          <p><a href="mailto:info@aldoferretti.com">Contacta con nosotros</a></p>
         </div>
       </div>
+
+
       <hr class="hr__footer">
       <div class="after__footer">
         <p>Aldo Ferretti 2024 ©</p>

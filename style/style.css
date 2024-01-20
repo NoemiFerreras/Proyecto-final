@@ -29,19 +29,6 @@ time, mark, audio, video {
 
 /* HOME PAGE */
 
-.header{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: white;
-	position:fixed;
-	z-index: 2;
-	padding-top: 10px;
-	width: 100%;
-	height: 80px;
-	gap: 450px;
-}
-
 
 
 /* NAVBAR */
@@ -51,6 +38,11 @@ time, mark, audio, video {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
+	position: fixed;
+	z-index: 2;
+	background-color: white;
+	padding-top: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
 
 .navbar__left{
@@ -112,55 +104,9 @@ time, mark, audio, video {
 	display: none;
 }
 
-
-
-
-/* .navbar{
-	display: flex;
-	gap: 50px;
-}
-
-.menu{
-	display: flex;
-	gap: 10px;
-	border: none;
-	background-color: white;
-}
-
-.menu p{
-	font-family: var(--roboto-font);
-	margin-top: 3px;
-}
-
-.search{
-	display: flex;
-	gap: 10px;
-	border: none;
-	background-color: white;
-}
-
-.search p{
-	margin-top: 3px;
-}
-
-.logo{
-	width: 20%;
-}
-
-.logo img{
-	width: 100%;
-}
-
-.utility__item{
-	display: flex;
-	gap: 50px;
-}*/
-
-
-
 .main{
 	position: relative;
-	top: 90px;
+	top: 60px;
 } 
 
 
@@ -168,15 +114,18 @@ time, mark, audio, video {
 
 .banner{
 	width: 100%;
+	display: flex;
+	align-items:center;
+	background-image: url(../img/AF\ leather.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 750px;
 }
 
 .banner__img{
 	width: 100%;
 }
-
-/* .banner__video{
-	position: relative;
-} */
 
 .banner__button{
 	position: absolute;
@@ -184,7 +133,6 @@ time, mark, audio, video {
 	background-color: rgba(0, 0, 0, 0);
 	color: white;
 	border-radius: 40px;
-	top: 700px;
 	left: 45%;
 	padding: 15px;
 }
@@ -193,6 +141,7 @@ time, mark, audio, video {
 	text-decoration: none;
 	color: white;
 }
+
 
 
 
@@ -300,6 +249,8 @@ time, mark, audio, video {
 }
 
 
+
+
 /* HANDCRAFTED */
 
 .handcrafted{
@@ -336,10 +287,11 @@ time, mark, audio, video {
 }
 
 
+
+
 /* NEWSLETTER */
 
 .newsletter{
-	/* background-color: rgb(240, 240, 240); */
 	background-image: url(../img/Pattern\ Aldo\ Ferretti.png);
 	background-size: cover;
 	display: flex;
@@ -351,7 +303,7 @@ time, mark, audio, video {
 	gap: 45px;
 }
 
-.custom-select{
+.newsletter__div{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -377,6 +329,8 @@ time, mark, audio, video {
 
 
 
+
+
 /* FOOTER */
 
 .footer{
@@ -389,13 +343,15 @@ time, mark, audio, video {
 
 .footer__box{
 	display: flex;
-	justify-content: center;
-	width: 90%;
-	padding: 50px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+	width: 60%;
+	margin-bottom: 50px;
 }
 
 .footer__div{
-	width: 25%;
+	width: 33%;
 }
 
 .footer__div h4{
@@ -423,15 +379,17 @@ time, mark, audio, video {
 	width: 80%;
 	height: 1px;
 	border: none;
+	position: relative;
 }
 
 .after__footer{
+	position: relative;
 	margin-top: 20px;
 	margin-bottom: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 500px;
+	gap: 420px;
 }
 
 .after__footer--logo{
@@ -463,7 +421,7 @@ time, mark, audio, video {
 	justify-content: center;
 	align-items: center;
 	background-image: url(../img/Banner_catalogo.webp);
-	height: 800px;
+	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -669,98 +627,228 @@ time, mark, audio, video {
 
 
 
-/* Pantallas medianas (tablets de menos de 992px) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VERSIÓN TABLET (Pantallas medianas de menos de 992px) */
 
 @media (max-width: 991.98px) {
 
 	.navbar{
-		justify-content: space-between;
-	}
-
-	.navbar__left{
-		display: none;
-	}
-
-	.navbar__center{
-		display: none;
-	}
-
-	.navbar__right{
 		display: none;
 	}
 
 	.menu__responsive{
 		display: flex;
 		align-items: center;
-		width: 40px;
-		margin-left: 80px;
-		gap: 360px;
+		justify-content: space-between;
+		position: fixed;
+		z-index: 2;
+		background-color: white;
+		padding: 0 1em 0 1em;
 	}
 
-	.menu__responsive__left{
+	.abrir-menu, .cerrar-menu{
+		border: 0;
+		font-size: 2em;
+		background-color: transparent;
+		color: black;
+	}
+
+	.abrir-menu, .cerrar-menu{
+		width: 60px;
+		height: 60px;
+	}
+
+	.hamburguer__nav{
+		opacity: 0;
+		visibility: hidden;
 		display: flex;
-		align-items: center;
-		gap: 20px;
+		flex-direction: column;
+		align-items: start;
+		gap: 1rem;
+		width: 35%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 1800px;
+		background-color: white;
+		padding: 2rem;
+		box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+	}
+
+	.hamburguer__nav.visible{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.hamburguer__nav--list{
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		align-items: start;
+	}
+
+	.nav--list-li a{
+		text-decoration: none;
+		color: black;
 	}
 
 	.menu__responsive--logo{
-		width: 200px;
+		width: 30%;
 	}
 
-	.respmenu a {
-		color: inherit;
-		text-decoration: none;
-		display: block;
-		padding: 10px 20px;
-		border-bottom: 2px solid #456789;
-		max-width: 200px;
-		background: #234567;
-		font-variant: small-caps;
-		text-shadow: 1px 1px black;
-	  }
-	
-	  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
-		position: absolute;
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-		right: 0;
-		top: 0;
-		width: 48px;
-		height: 48px;
-	  }
-	  
-	  .respmenu .fa-bars, .respmenu .fa-times {
-		font-size: 48px;
-		pointer-events: none;
-	  }
-	  
-	  .respmenu input[type="checkbox"] {
-		opacity: 0;
-	  }
-	  
-	  .respmenu {
-		color: black;
-		position: relative;
-		background: white;
-		min-height: 48px;
-	  }
-	  
-	  .respmenu nav {
+	.menu__responsive--logo img{
+		width: 100%;
+	}
+
+	.manu__responsive--cart{
+		width: 25%;
+	}
+
+	.banner__button{
 		display: none;
-	  }
-	  
-	  .respmenu input:checked ~ nav {
-		display: block;
-	  }
-	  
-	  .respmenu input:checked ~ .fa-bars {
+	}
+
+	.bestseller{
+		margin-top: 50px;
+	}
+
+	.flip-card{
+		height: 130px;
+	}
+
+	.catalogo__article{
+		margin-bottom: 0;
+		gap: 0;
+		height: 160px;
+	}
+
+	.style{
+		background-image: url(../img/1565_SEL7691-mobile.jpg);
+		height: 600px;
+		display: flex;
+		align-items: start;
+		text-align: left;
+	}
+
+	.style__div{
+	padding-top: 60px;
+	padding-left: 50px;
+	}
+
+	.handcrafted--p{
+		width: 80%;
+	}
+
+	.footer__box{
+		width: 80%;
+	}
+
+	.footer__div{
+		width: 33%;
+	}
+
+	.after__footer{
+		gap: 100px;
+	}
+
+
+
+
+
+	/* PAGINA DE CATALOGO */
+
+	.gallery__div{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.product__card{
+		width: 50%;
+		height: 450px;
+	}
+
+	.card__text{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 30px;
+		top: 380px;
+		font-size: 2em;
+		padding-left: 35px;
+	}
+
+
+
+
+
+
+
+
+	/* PAGINA DE CONTACTO */
+
+	.banner__contacto{
+		height: 180px;
+	}
+
+	.banner__contacto--div{
+		margin-top: 100px;
+	}
+
+	.banner__contacto--div h2{
+		font-size: 3em;
+	}
+
+	.banner__contacto--div p{
 		display: none;
-	  }
-	  
-	  .respmenu input:not(:checked) ~ .fa-times {
-		display: none;
-	  }
+
+	}
+
+	.contacto{
+		margin-top: 50px;
+		padding: 40px;
+		gap: 50px	;
+	}
+
+	.contacto__div{
+		width: 30%;
+		gap: 0;
+		text-align: center;
+	}
+
+	.FAQs{
+		margin-top: 50px;
+		gap: 10px;
+	}
+
+	.FAQs__section{
+		gap: 30px;
+		margin-bottom: 120px;
+	}
+
+	.FAQs__box{
+		padding: 20px;
+		gap: 20px;
+		height: 80px;
+		width: 116px;
+	}
+
+
+
+
 
 
 }
@@ -772,54 +860,260 @@ time, mark, audio, video {
 
 
 
-/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VERSIÓN MÓVIL (Pantallas pequeñas de menos de 768px) */
 
 @media (max-width: 767.98px) {
 
+	.menu__responsive{
+		padding: 5px 5px;
+	}
+	
+	.abrir-menu{
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu__responsive--logo{
+		width: 70%;
+	}
+
+	.banner{
+		background-image: url(../img/AF-leather-mobile.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 390px;
+	}
+
+	.banner__button{
+		display: none;
+	}
+
+	.bestseller{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.bestseller__h2{
+		margin-bottom: 0px;
+	}
+
+	.bestseller__products{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.catalogo__article{
+		height: 275px;
+		width: 100%;
+	}
+
+	.box__card{
+		margin-top: 100px;
+	}
+
+	.style{
+		display: none;
+	}
+
+	.handcrafted{
+		padding-top: 10px;
+	}
+
+	.handcrafted--h1{
+		padding-bottom: 0;
+	}
+
+	.handcrafted--p{
+		display: none;
+	}
+
+	.homepage__section{
+		padding: 5px 5px 5px 5px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0;
+	}
+
+	.banner__item{
+		width: 100%;
+	}
+
+	.newsletter{
+		gap: 10px;
+		padding: 10px 5px 20px 5px;
+		text-align: center;
+	}
+
+	.newsletter__div{
+			display: flex;
+			flex-direction: column;
+	}
+
+	.newsletter__input{
+		width: 300px;
+	}
+
+	.newsletter__button{
+		width: 335px;
+	}
+
+	.footer__box{
+	margin-top: 0;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	}
+
+	.footer__div{
+	margin-top: 25px;
+	width: 100%;
+	}
+
+	.footer__div h4{
+	margin-bottom: 5px;
+	}
+
+	.footer__div p{
+	padding-left: 15px;
+	}
+
+	.after__footer{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	}
+
+	.after__footer--logo{
+	width: 65%;
+	}
+
+
+
+
+
+
+	/* PAGINA DE CATÁLOGO */
+
+	.banner__catalogo{
+		background-image: url(../img/Banner_catalogo-mobile.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.banner__catalogo--div h2{
+		font-size: 3em;
+	}
+
+	.banner__catalogo--div p{
+		display: none;
+	}
+
+	.gallery__div{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.product__card{
+		width: 50%;
+		height: 220px;
+	}
+
+	.card__text{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 5px;
+		top: 160px;
+		left: 15px;
+		font-size: 1em;
+	}
+
+
+
+
+
+
+
+
+
+	/* PAGINA DE CONTACTO */
+	
+	.banner__contacto{
+		background-image: url(../img/Tienda-AF-mobile.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 400px;
+	}
+
+	.banner__contacto--div{
+		margin-top: 200px;
+	}
+
+	.contacto{
+		margin-top: 20px;
+		width: 90%;
+		gap: 30px;
+	}
+
+	.contacto__div{
+		width: 30%;
+	}
+
+	.contacto__div p{
+		display: none;
+	}
+
+	.FAQs__section{
+		margin-top: 25px;
+		width: 90%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+		margin-bottom: 50px;
+	}
+
+	.FAQs__box{
+		margin-top: 0;
+	}
+
+
+
+
+
+
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
