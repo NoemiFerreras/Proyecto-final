@@ -83,7 +83,7 @@ const mapGallery = shoes.map(
 )
 
 
-gallery.innerHTML = mapGallery.join("")
+gallery.innerHTML = mapGallery.join(" ")
 
 
 })
