@@ -670,7 +670,7 @@ time, mark, audio, video {
 		position: fixed;
 		z-index: 2;
 		background-color: white;
-		padding: 0 1em 0 1em;
+		padding: 0.5em 1em 0 1em;
 		box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 	}
 
@@ -684,6 +684,14 @@ time, mark, audio, video {
 	.abrir-menu, .cerrar-menu{
 		width: 60px;
 		height: 60px;
+	}
+
+	.abrir-menu img{
+		width: 80%;
+	}
+
+	.cerrar-menu img{
+		width: 60%;
 	}
 
 	.hamburguer__nav{

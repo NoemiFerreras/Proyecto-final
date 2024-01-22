@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
 
+
+
 // MENU HAMBURGUESA
 const nav = document.querySelector("#nav")
 const abrir = document.querySelector("#abrir")
@@ -13,6 +15,9 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
   nav.classList.remove("visible")
 })
+
+
+
 
 //CATÁLOGO
 /* array de objetos */
@@ -59,10 +64,8 @@ const shoes = [{
 }]
 
 
-
 /*Caja donde vamos a ponerlo*/
 const gallery = document.getElementById("gallery")
-
 
 
 const mapGallery = shoes.map(
@@ -82,42 +85,6 @@ const mapGallery = shoes.map(
 
 
 gallery.innerHTML = mapGallery.join(" ")
-
-
-
-
-//SLIDER BESTSELLERS
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
